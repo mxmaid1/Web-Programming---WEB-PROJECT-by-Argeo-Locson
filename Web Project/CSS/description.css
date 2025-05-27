@@ -1,0 +1,41 @@
+.features {
+    padding: 10px;
+    margin: 0px 25px;
+    flex: 50%;
+    height: auto;
+    color: #626d85;
+}
+
+.fdesc {
+    font-size: 25px;
+}
+
+.features img {
+    width: 100%;
+}
+
+.text-section {
+    background-color: #c5d5ec;
+    color: #626d85;
+    font-weight: 400;
+    height: auto;
+    font-size: 18px;
+}
+
+.image-section img {
+    min-width: 50%;
+    width: 100%;
+}
+
+.image-section2 img {
+    min-width: 70%;
+    width: 70%;
+}
+
+.header-section {
+    color: #444b5c;
+    font-weight: 900;
+    height: 375px;
+    font-size: 50px;
+    margin: 35px 15px;
+}
