@@ -1,0 +1,18 @@
+.trailer-section {
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    background-color: #dde5f4;
+}
+
+#trailer-header {
+    height: 100px;
+    font-size: 75px;
+    padding: 25px;
+    font-weight: 900;
+}
+
+.trailer-link {
+    text-decoration: none;
+    color: black;
+}
