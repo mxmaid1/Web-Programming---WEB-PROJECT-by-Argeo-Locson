@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Persona 3 Reload</title>
+    <link rel="icon" type="image/x-icon" href="images/P3RLogo.png">
+    <link rel="stylesheet" href="CSS/description.css">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/characters.css">
+    <link rel="stylesheet" href="CSS/navigation.css">
+    <link rel="stylesheet" href="CSS/trailer.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+            scroll-padding-top: 145px;
+            /* height of sticky header */
+          }
+    
+          body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #dde5f4;
+          }
+    
+          .header {
+            font-size: 25px;
+          }
+    
+          .section-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: justify;
+            background-color: #c5d5ec;
+          }
+    
+          .left-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 25px 25px;
+            flex: 50%;
+          }
+    
+          .right-container {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px 25px;
+            flex: 50%;
+          }
+    
+          .end {
+            width: 100%;
+            height: 100px;
+            background-color: #a5c1e9;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+    
+          .end a {
+            text-decoration: none;
+            color: #626d85;
+          }
+    
+          .contact-form input {
+            margin: 15px 0;
+            display: block;
+          }
+    
+          .logo6 {
+            width: 50%;
+            margin-left: auto;
+            position: absolute;
+            right: 330px;
+            top: 50%;
+            bottom: 0%;
+            display: grid;
+            width: 40%;
+            justify-items: center;
+            z-index: 0;
+          }
+    
+          /* Checks for width and height of the web */
+          @media (max-width: 890px) {
+            iframe {
+              height: 317px;
+              width: 560px;
+            }
+    
+            .trailer-section {
+              margin-top: 50px;
+              height: 500px;
+            }
+    
+            /* Change top bar tab lists */
+            .father {
+              display: contents;
+            }
+    
+            .topspace {
+              height: 65px;
+              background-color: rgba(0, 182, 255, 0.8);
+            }
+    
+            .navbar {
+              display: none;
+            }
+    
+            /* repositions */
+            .logo6 {
+              right: 330px;
+              top: 42%;
+            }
+    
+            .html {
+              scroll-padding-top: 275px;
+              /* height of sticky header */
+            }
+          }
+    </style>
+    <script></script>
+    <base />
+</head>
+
+<body>
+    <nav>
+        <div class="father">
+            <div class="topnav">
+                <a href="#" id="logo">
+                    <img src="images/p3rlogo.svg">
+                </a>
+                <div id="myLinks">
+                    <a href="./index.html">Features</a>
+                    <a href="./gamesystems.html">Game Systems</a>
+                    <a href="./tracks.html">Soundtracks</a>
+                    <a href="./characters.html">Characters</a>
+                    <a href="./dlc.html">DLC</a>
+                    <a href="./buy.html">Buy</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img id="NavStackIcon" src="images/stack logo.png">
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="#" id="logo2">
+                <img src="images/p3rlogo.svg">
+            </a>
+            <a href="./buy.html" class="menu-element">Buy</a>
+            <a href="./dlc.html" class="menu-element">DLC</a>
+            <a href="./characters.html" class="menu-element">Characters</a>
+            <a href="./tracks.html" class="menu-element">Soundtracks</a>
+            <a href="./gamesystems.html" class="menu-element">Game Systems</a>
+            <a href="./index.html" class="menu-element">Features</a>
+        </div>
+    </nav>
+    <main>
+        <div class="sticky-parent">
+            <div class="sticky">
+                <div class="scroll-section">
+                    <div class="section-item" id="sees">
+                        <p style="font-size: 60px; font-weight: 900;">S.E.E.S.</p>
+                        <p style="font-size: 35px;"> An aggregation vigilantly chosen to </p>
+                        <p style="font-size: 35px;"> vanquish the Shadows, will face Destiny. </p>
+                        <p style="font-size: 35px;"> Time won't wait for you, destiny won't change for you. </p>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/yuki.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Protagonist</p>
+                            <p class="story">A second-year who transferred to Gekkoukan High School in the spring, returning to the island he used to live on as a child.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/yukari.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name"> Yukari Takeba</p>
+                            <p class="story">A second-year at Gekkoukan High School and a classmate of the Protagonist. Her cheerful personality and good looks attract many admirers, but beneath the pleasantries, she's rather headstrong and aloof.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/junpei.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Junpei Iori</p>
+                            <p class="story">Another of the Protagonist's classmates, next to Yukari. He awakens to his Persona abilities shortly after the Protagonist transfers into the school, prompting him to join the rest of SEES in the Iwatodai Dorm.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/akihiko.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Akihiko Sanada</p>
+                            <p class="story">A third-year at Gekkoukan High School and one of the founding members of SEES. He’s the captain of the boxing team and excels in academics as well, earning him a lot of fans around school.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/mitsuru.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Mitsuru Kirijo</p>
+                            <p class="story">The heiress of a powerful international corporation, the Kirijo Group. She’s a third-year at Gekkoukan High School and serves as student council president. She also leads SEES and organizes their operations.
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/fuuka.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Fuuka Yamagishi</p>
+                            <p class="story">A quiet and calm second-year at Gekkoukan High School. Less upstanding students take advantage of her timidness, turning her into a bullying target.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/koromaru.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Koromaru</p>
+                            <p class="story">A dog who awakens to the power of Persona after a tragic event. Since his original owner—the priest of the dorm's neighboring Naganaki Shrine—had passed away, the protagonist and friends take him in as a full-fledged member
+                                of SEES.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/aigis.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Aigis</p>
+                            <p class="story">A man-made Anti-Shadow Suppression Weapon, 7th Generation. She joins SEES as an android with a humanlike heart, granting her the power of Persona.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/ken.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Ken Amada</p>
+                            <p class="story">The youngest member of SEES—a 5th grader at Gekkoukan Elementary. After losing his mother in an accident, he comes to live at the Iwatodai Dorm.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/shinjiro.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Shinjiro Aragaki</p>
+                            <p class="story">A third-year at Gekkoukan High, though he can rarely be seen at school. He was a founding member of SEES alongside Mitsuru and Akihiko. After distancing himself for about two years, a certain turn of events convinces him to
+                                rejoin the group.</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <p style="font-size: 60px; font-weight: 900;">STREGA</p>
+                        <p style="font-size: 25px;">The Dark Hour is a period of time hidden between each day that most people cannot perceive.</p>
+                        <p style="font-size: 25px;">A group called Strega takes advantage of this, using it to carry out requests for revenge on others.</p>
+                        <p style="font-size: 25px;">As the members of S.E.E.S. strive to solve the mystery of the Dark Hour, Strega stands before them as an adversary</p>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/takaya.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Takaya</p>
+                            <p class="story">The leader of Strega, a group of three that uses the Dark Hour as a means to carry out requests for revenge. He considers the Dark Hour to be a special gift reserved only for those with the power of Persona, and does not wish
+                                for it to disappear.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/jin.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Jin</p>
+                            <p class="story">A member of Strega, a group of three that uses the Dark Hour as a means to carry out requests for revenge. He is an intelligent young man who specializes in data analysis and runs the Revenge Request website for Strega's activities.</p>
+                        </div>
+                    </div>
+                    <div class="section-item character-card">
+                        <div class="char-face">
+                            <img src="./images/chidori.webp">
+                        </div>
+                        <div class="split-section" style="max-width: 50%;">
+                            <p class="name">Chidori</p>
+                            <p class="story">A member of Strega, a group of three that uses the Dark Hour as a means to carry out requests for revenge. She wears a striking white dress and rarely shows emotion, coldly pushing away those who dare speak to her.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> © Educational project by Argeo locson</p>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+    </script>
+    <script src="JS/scrollx.js"></script>
+</body>
+
+</html>
