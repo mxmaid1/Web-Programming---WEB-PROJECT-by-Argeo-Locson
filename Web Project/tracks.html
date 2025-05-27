@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Persona 3 Reload</title>
+    <link rel="icon" type="image/x-icon" href="images/P3RLogo.png">
+    <link rel="stylesheet" href="CSS/description.css">
+    <link rel="stylesheet" href="CSS/navigation.css">
+    <link rel="stylesheet" href="CSS/trailer.css">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/soundtrack.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+            scroll-padding-top: 145px;
+            /* height of sticky header */
+          }
+    
+          body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #dde5f4;
+          }
+    
+          .header {
+            font-size: 25px;
+          }
+    
+          .section-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: justify;
+            background-color: #c5d5ec;
+          }
+    
+          .left-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 25px 25px;
+            flex: 50%;
+          }
+    
+          .right-container {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px 25px;
+            flex: 50%;
+          }
+    
+          .contact-form input {
+            margin: 15px 0;
+            display: block;
+          }
+    
+          .logo6 {
+            width: 50%;
+            margin-left: auto;
+            position: absolute;
+            right: 330px;
+            top: 50%;
+            bottom: 0%;
+            display: grid;
+            width: 40%;
+            justify-items: center;
+            z-index: 0;
+          }
+    
+          /* Checks for width and height of the web */
+          @media (max-width: 890px) {
+            iframe {
+              height: 317px;
+              width: 560px;
+            }
+    
+            .trailer-section {
+              margin-top: 50px;
+              height: 500px;
+            }
+    
+            .topspace {
+              height: 65px;
+              background-color: rgba(0, 182, 255, 0.8);
+            }
+    
+            /* Change top bar tab lists */
+            .father {
+              display: contents;
+            }
+    
+            .navbar {
+              display: none;
+            }
+    
+            /* repositions */
+            .logo6 {
+              right: 330px;
+              top: 42%;
+            }
+    
+            .html {
+              scroll-padding-top: 275px;
+              /* height of sticky header */
+            }
+          }
+    </style>
+    <script></script>
+    <base />
+</head>
+
+<body>
+    <nav>
+        <div class="father">
+            <div class="topnav">
+                <a href="#" id="logo">
+                    <img src="images/p3rlogo.svg">
+                </a>
+                <div id="myLinks">
+                    <a href="./index.html">Features</a>
+                    <a href="./gamesystems.html">Game Systems</a>
+                    <a href="./tracks.html">Soundtracks</a>
+                    <a href="./characters.html">Characters</a>
+                    <a href="./dlc.html">DLC</a>
+                    <a href="./buy.html">Buy</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img id="NavStackIcon" src="images/stack logo.png">
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="#" id="logo2">
+                <img src="images/p3rlogo.svg">
+            </a>
+            <a href="./buy.html" class="menu-element">Buy</a>
+            <a href="./dlc.html" class="menu-element">DLC</a>
+            <a href="./characters.html" class="menu-element">Characters</a>
+            <a href="./tracks.html" class="menu-element">Soundtracks</a>
+            <a href="./gamesystems.html" class="menu-element">Game Systems</a>
+            <a href="./index.html" class="menu-element">Features</a>
+        </div>
+    </nav>
+    <main>
+        <div class="topspace"></div>
+        <span id="sountrack-header">PERSONA 3 RELOAD SOUNDTRACKS</span>
+        <div class="section-container" style="justify-content: center;">
+            <div class="player-wrapper">
+                <div class="player-main">
+                    <div class="album-art" id="albumArt" style="background-image: url('images/SoundtrackAlbumPic.jpg');">
+                        <marquee class="marquee-vertical" behavior="scroll" direction="up" scrollamount="3"> MUSIC PAUSED </marquee>
+                    </div>
+                    <div class="controls">
+                        <div id="songTitle">Full Moon Full Life</div>
+                        <audio id="audio" src="Audios/Full Moon Full Life.mp3"></audio>
+                        <div>
+                            <button onclick="prevSong()">Previous</button>
+                            <button onclick="togglePlayPause()" id="playPauseBtn">Play</button>
+                            <button onclick="nextSong()">Next</button>
+                            <button onclick="toggleLoop()" id="loopBtn">Loop: Off</button>
+                        </div>
+                        <div class="progress-container" id="progressContainer">
+                            <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
+                            <div class="progress-handle" id="progressHandle" style="left: 0%;"></div>
+                        </div>
+                        <table id="songList" class="song-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Song Name</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- JS/MusicPlayer.js will populate this -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-container" style="justify-content: center;">
+            <p class="sDesc" style="height: 120px; width: 1500px;">The soundtrack first became available with the Aigis Edition of Persona 3 Reload as Persona 3 Reload Soundtrack in the United States and with the Limited Box release as Persona 3 Reload Limited Box Original Soundtrack in Japan. A downloadable
+                version is bundled with the Digital Deluxe and Digital Premium editions of Persona 3 Reload on Xbox Series X/S, PlayStation 4, PlayStation 5, and Steam, and is titled as the Persona 3 Reload Digital Soundtrack. </p>
+        </div>
+        <div class="album-gallery-container">
+            <h2 class="album-gallery-header">ALBUM GALLERY</h2>
+            <div class="album-scroll-wrapper">
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Makoto_Yuki_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Yukari_Takeba_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Junpei_Iori_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Mitsuru_Kirijo_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Akihiko_Sanada_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Fuuka_Yamagishi_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Koromaru_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Aigis_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Ken_Amada_Cover.png');"></div>
+                <div class="album-item" style="background-image: url('images/P3R_OST_Bonus_Shinjiro_Aragaki_Cover.png');"></div>
+                <!-- Add more album-item divs as needed -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> © Educational project by Argeo locson</p>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+    </script>
+    <script src="JS/MusicPlayer.js"></script>
+    <script src="JS/scrollx.js"></script>
+</body>
+
+</html>
